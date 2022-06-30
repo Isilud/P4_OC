@@ -12,6 +12,12 @@
     />
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
@@ -41,7 +47,7 @@
     <section class="presentation" id="bloc-1-hero">
       <div class="presentation__content">
         <img
-          src="img/logo.png"
+          src="img/logo.webp"
           class="presentation__logo"
           alt="logo agence La Panthère"
         />
@@ -54,11 +60,11 @@
     <!-- bloc-2-services -->
     <section class="services">
       <h2 class="services__header">
-        La Panthère est une agence de web design qui aide les entreprises à
-        devenir attractives et visibles sur Internet.
+        L'agence La Panthère est une agence de web design qui aide les
+        entreprises à devenir attractives et visibles sur Internet.
       </h2>
       <div class="services__list">
-        <figure class="">
+        <figure class="service__list-container">
           <span class="et-icon-browser services__list-icon"></span>
           <figcaption>
             <h3 class="services__list-title">Web design</h3>
@@ -69,7 +75,7 @@
             </p>
           </figcaption>
         </figure>
-        <figure class="">
+        <figure class="service__list-container">
           <span class="et-icon-presentation services__list-icon"></span>
 
           <figcaption>
@@ -81,7 +87,7 @@
             </p>
           </figcaption>
         </figure>
-        <figure class="">
+        <figure class="service__list-container">
           <span class="et-icon-edit services__list-icon"></span>
 
           <figcaption>
@@ -136,93 +142,111 @@
 
     <!-- bloc-4-portfolio -->
     <section class="portfolio">
-      <p>
+      <p class="portfolio__header">
         Nous travaillons avec beaucoup de clients,<br />
         voici nos réalisations.
       </p>
-      <div class="row tight-width-whitespace portfolio-row">
-        <div class="col-sm-6">
+      <div class="portfolio__list">
+        <figure class="creation__container">
           <a
-            href="#"
-            data-lightbox="img/1.jpg"
-            data-gallery-id="gallery-1"
-            data-caption="Refonte d'un site web pour un journal local"
-            data-frame="snapshot-lb"
+            href="img/1.webp"
+            data-toggle="lightbox"
+            data-gallery="example-gallery"
+            class="creation__image-container"
             ><img
-              src="img/1.jpg"
-              alt="paris web design logo agence web meilleure agence et refonte site web journal"
-              class="img-responsive portfolio-thumb"
-          /></a>
-          <h3 class="mg-md text-center">
-            Refonte d'un site web pour un journal local
-          </h3>
-          <p class="text-center">
-            Nous avons créé une nouvelle identité visuelle pour un journal
-            lyonnais.
-          </p>
-        </div>
-        <div class="col-sm-6">
+              src="img/1.webp"
+              alt="Refonte site web journal"
+            />
+            <div class="creation__hover">
+              <div class="creation__hover-icon">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <figcaption>
+            <h3 class="creation__title">
+              Refonte d'un site web pour un journal local
+            </h3>
+            <p class="creation__text">
+              Nous avons créé une nouvelle identité visuelle pour un journal
+              lyonnais.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="creation__container">
           <a
-            href="#"
-            data-lightbox="img/2.jpg"
-            data-gallery-id="gallery-1"
-            data-caption="Création d'un site web pour photographes"
-            data-frame="snapshot-lb"
+            href="img/2.webp"
+            data-toggle="lightbox"
+            data-gallery="example-gallery"
+            class="creation__image-container"
             ><img
-              src="img/2.jpg"
-              class="img-responsive portfolio-thumb"
-              alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"
-          /></a>
-          <h3 class="mg-md text-center">
-            Création d'un site web pour photographes
-          </h3>
-          <p class="text-center">
-            Nous avons conçu la plateforme idéale pour laisser place aux clichés
-            des photographes.
-          </p>
-        </div>
-      </div>
-      <div class="row tight-width-whitespace portfolio-row">
-        <div class="col-sm-6">
+              src="img/2.webp"
+              alt="Création d'un site web pour photographes"
+            />
+            <div class="creation__hover">
+              <div class="creation__hover-icon">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <figcaption>
+            <h3 class="creation__title">
+              Création d'un site web pour photographes
+            </h3>
+            <p class="creation__text">
+              Nous avons conçu la plateforme idéale pour laisser place aux
+              clichés des photographes.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="creation__container">
           <a
-            href="#"
-            data-lightbox="img/3.bmp"
-            data-gallery-id="gallery-1"
-            data-caption="Création d'un site internet pour un voyageur"
-            data-frame="snapshot-lb"
+            href="img/3.webp"
+            data-toggle="lightbox"
+            data-gallery="example-gallery"
+            class="creation__image-container"
             ><img
-              src="img/3.bmp"
-              class="img-responsive portfolio-thumb"
-              alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"
-          /></a>
-          <h3 class="mg-md text-center">
+              src="img/3.webp"
+              alt="Création d'un site web pour voyageur"
+            />
+            <div class="creation__hover">
+              <div class="creation__hover-icon">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <h3 class="creation__title">
             Création d'un site internet pour un voyageur
           </h3>
-          <p class="text-center">
+          <p class="creation__text">
             Nous avons élaboré un site internet et des illustrations pour
             sublimer les vidéos et les articles de ce voyageur.
           </p>
-        </div>
-        <div class="col-sm-6">
+        </figure>
+        <figure class="creation__container">
           <a
-            href="#"
-            data-lightbox="img/4.bmp"
-            data-gallery-id="gallery-1"
-            data-caption="Conception d'un site pour une agence de mariage"
-            data-frame="snapshot-lb"
+            href="img/4.webp"
+            data-toggle="lightbox"
+            data-gallery="example-gallery"
+            class="creation__image-container"
             ><img
-              src="img/4.bmp"
-              class="img-responsive portfolio-thumb"
-              alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"
-          /></a>
-          <h3 class="mg-md text-center">
+              src="img/4.webp"
+              alt="Création d'un site web pour agence de mariage"
+            />
+            <div class="creation__hover">
+              <div class="creation__hover-icon">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <h3 class="creation__title">
             Conception d'un site pour une agence de mariage
           </h3>
-          <p class="text-center">
+          <p class="creation__text">
             Nous avons travaillé avec cette agence pour créer un site internet
             permettant la présentation détaillée de leurs prestations.
           </p>
-        </div>
+        </figure>
       </div>
     </section>
     <!-- bloc-4-portfolio END -->
@@ -237,7 +261,7 @@
       </h2>
       <div class="col-sm-12 text-center">
         <a
-          href="page2.html"
+          href="contact.html"
           class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"
           >Contact</a
         >
@@ -278,11 +302,18 @@
     </footer>
     <!-- Footer - bloc-8 END -->
 
-    <script src="./js/jquery-2.1.0.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
-    <script src="./js/jquery.touchSwipe.js"></script>
-    <script src="./js/gmaps.js"></script>
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.0/dist/index.bundle.min.js"></script>
   </body>
 </html>
