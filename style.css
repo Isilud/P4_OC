@@ -67,7 +67,7 @@ header {
   font-size: 1.4em;
 }
 
-.presentation__contact {
+.button__contact {
   box-sizing: border-box;
   background: #f3976c;
   color: white;
@@ -83,7 +83,7 @@ header {
   padding: 0.7rem;
 }
 
-.presentation__contact:visited {
+.button__contact:visited {
   color: white;
 }
 
@@ -263,6 +263,71 @@ header {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 0.5rem;
+}
+
+.cta {
+  background-image: url("img/agence-la-panthere.webp");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cta__texture {
+  text-align: center;
+  background: url("img/texture-paper.png");
+  background-size: 280px 280px;
+  height: 100%;
+}
+
+.cta__color {
+  margin: auto;
+  padding: 6rem;
+  height: 100%;
+  background-color: rgb(73, 73, 73);
+  mask-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+}
+
+.cta__text {
+  color: #f3976c;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  background-color: #f3976c;
+  color: white;
+  padding : 2rem;
+}
+
+.footer__title {
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+  color: white;
+  padding: 2rem;
+}
+
+.footer__networks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__social-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social{
+  font-size: 3rem;
+  color: white;
+}
+
+.footer__social a:visited{
+  color: white;
 }
 
 @media (max-width: 672px) {
