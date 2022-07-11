@@ -65,20 +65,20 @@
       <form class="form" novalidate>
         <div class="form__column-1">
           <div class="form__group">
-            <label> Nom </label>
+            <label for="name"> Nom </label>
             <input id="name" class="form-control" required />
           </div>
           <div class="form__group">
-            <label> Adresse email </label>
+            <label for="email"> Adresse email </label>
             <input id="email" class="form-control" type="email" required />
           </div>
           <div class="form__group">
-            <label> Comment nous avez-vous connu ? </label>
-            <input class="form-control" type="email" required />
+            <label for="answer"> Comment nous avez-vous connu ? </label>
+            <input id="answer" class="form-control" type="email" required />
           </div>
         </div>
         <div class="form__group">
-          <label>
+          <label for="message">
             Brief de votre projet (Ajoutez autant de détails que nécessaire)<br /> </label
           ><textarea
             id="message"
@@ -89,13 +89,13 @@
           ></textarea>
         </div>
       </form>
-      <div class="form__under">
+      <div class="form__button-container">
         <button class="form__button" type="submit">Envoyer</button>
-        <p class="form__adress">
-          contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-          de 9h à 18h, du lundi au vendredi<br />
-        </p>
       </div>
+      <p class="form__adress">
+        contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
+        de 9h à 18h, du lundi au vendredi<br />
+      </p>
     </section>
     <!-- bloc-7 END -->
 
@@ -106,24 +106,28 @@
       </p>
       <div class="footer__networks">
         <div class="footer__social-container">
-          <a class="footer__social" href="index.html"
-            ><span class="fa fa-twitter icon-md"></span
-          ></a>
+          <a class="footer__social" href="#"
+            ><span class="fa fa-twitter icon-md"></span>
+            <p class="footer__social-text">Twitter</p>
+          </a>
         </div>
         <div class="footer__social-container">
-          <a class="footer__social" href="index.html"
-            ><span class="fa fa-facebook icon-md"></span
-          ></a>
+          <a class="footer__social" href="#"
+            ><span class="fa fa-facebook icon-md"></span>
+            <p class="footer__social-text">Facebook</p>
+          </a>
         </div>
         <div class="footer__social-container">
-          <a class="footer__social" href="index.html"
-            ><span class="fa fa-dribbble icon-md"></span
-          ></a>
+          <a class="footer__social" href="#"
+            ><span class="fa fa-dribbble icon-md"></span>
+            <p class="footer__social-text">Dribble</p>
+          </a>
         </div>
         <div class="footer__social-container">
-          <a class="footer__social" href="index.html"
-            ><span class="fa fa-instagram icon-md"></span
-          ></a>
+          <a class="footer__social" href="#"
+            ><span class="fa fa-instagram icon-md"></span>
+            <p class="footer__social-text">Instagram</p>
+          </a>
         </div>
       </div>
     </footer>
